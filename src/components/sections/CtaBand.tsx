@@ -24,7 +24,7 @@ export function CtaBand({
     <section className="bg-mist-50 py-16 md:py-24">
       <div className="container-page">
         <div className="relative overflow-hidden rounded-[var(--radius-panel)] bg-navy-950 px-6 py-14 text-center sm:px-12 md:py-20">
-          <LogoMark tone="inverse" className="pointer-events-none absolute -bottom-24 left-1/2 h-[380px] w-[380px] -translate-x-1/2 opacity-[0.04]" />
+          <LogoMark tone="inverse" animated className="pointer-events-none absolute -bottom-24 left-1/2 h-[380px] w-[380px] -translate-x-1/2 opacity-[0.06]" />
           <h2 className="display relative mx-auto max-w-3xl text-[32px] text-white sm:text-[44px] lg:text-[52px]">{title}</h2>
           <p className="relative mx-auto mt-5 max-w-xl text-[17px] leading-relaxed text-navy-300">{body}</p>
           <div className="relative mt-9 flex flex-col items-stretch justify-center gap-3 sm:flex-row sm:items-center">

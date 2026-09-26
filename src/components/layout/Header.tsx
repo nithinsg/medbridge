@@ -86,7 +86,7 @@ export function Header() {
       >
         <div className="container-page flex h-16 items-center justify-between gap-4 lg:h-[72px]">
           <Link href="/" aria-label="MedBridge home" className="shrink-0">
-            <Logo />
+            <Logo animated />
           </Link>
 
           <nav aria-label="Main" className="hidden xl:block">
@@ -168,7 +168,7 @@ export function Header() {
       >
         <div className="container-page flex h-16 items-center justify-between border-b border-mist-200">
           <Link href="/" aria-label="MedBridge home" onClick={() => setOpen(false)}>
-            <Logo />
+            <Logo animated />
           </Link>
           <button
             type="button"

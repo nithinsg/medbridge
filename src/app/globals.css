@@ -180,3 +180,8 @@
 @keyframes mb-flow {
   to { stroke-dashoffset: -24; }
 }
+
+/* Logo flight animation — honour reduced-motion (SMIL isn't paused by the global rule) */
+@media (prefers-reduced-motion: reduce) {
+  .mb-logo-flight { display: none; }
+}

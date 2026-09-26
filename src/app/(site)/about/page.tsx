@@ -31,7 +31,7 @@ export default function AboutPage() {
   return (
     <>
       <section className="relative overflow-hidden bg-navy-950">
-        <LogoMark tone="inverse" className="pointer-events-none absolute -right-24 top-10 hidden h-[520px] w-[520px] opacity-[0.04] lg:block" />
+        <LogoMark tone="inverse" animated className="pointer-events-none absolute -right-24 top-10 hidden h-[520px] w-[520px] opacity-[0.04] lg:block" />
         <div className="container-page relative pb-20 pt-8 md:pb-28 md:pt-10">
           <Breadcrumbs items={[{ name: "About", path: "/about" }]} tone="dark" />
           <p className="eyebrow mt-12 text-aqua-300">About MedBridge</p>

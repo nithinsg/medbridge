@@ -9,7 +9,7 @@ export default function AdminLogin() {
   return (
     <div className="flex min-h-dvh items-center justify-center px-5">
       <div className="w-full max-w-sm rounded-[var(--radius-panel)] bg-white p-8 ring-1 ring-mist-200">
-        <LogoMark className="h-10 w-10" />
+        <LogoMark className="h-10 w-10" animated />
         <h1 className="mt-6 text-[24px] font-semibold tracking-tight">MedBridge Command Centre</h1>
         <p className="mt-1 text-[14.5px] text-ink-muted">Authorised staff only.</p>
         {enabled ? (

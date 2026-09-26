@@ -55,7 +55,7 @@ export function Footer() {
       <div className="container-page pt-16 pb-10 lg:pt-20">
         <div className="grid gap-12 lg:grid-cols-[1.2fr_2fr]">
           <div>
-            <Logo tone="inverse" />
+            <Logo tone="inverse" animated />
             <p className="mt-5 max-w-sm text-[15px] leading-relaxed">
               {site.tagline} {site.proofLine}
             </p>
