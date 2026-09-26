@@ -27,23 +27,23 @@ export type RepatriationOrigin = Place & {
   region: string;
   /** Rough great-circle distance band to India for the explainer — not a flight plan. */
   typical: string;
-  /** Destination hub used to draw the illustrative arc. */
+  /** Receiving hub used to draw the illustrative arc (all routes illustrate arrival in Hyderabad). */
   to: string;
 };
 
 export const repatriationOrigins: RepatriationOrigin[] = [
-  { id: "sin", name: "Singapore", region: "Southeast Asia", lat: 1.35, lon: 103.82, typical: "Medium-haul", to: "maa" },
-  { id: "dxb", name: "Dubai", region: "Middle East", lat: 25.2, lon: 55.27, typical: "Short to medium-haul", to: "bom" },
-  { id: "bkk", name: "Bangkok", region: "Southeast Asia", lat: 13.75, lon: 100.5, typical: "Medium-haul", to: "ccu" },
-  { id: "kul", name: "Kuala Lumpur", region: "Southeast Asia", lat: 3.14, lon: 101.69, typical: "Medium-haul", to: "blr" },
-  { id: "doh", name: "Doha", region: "Middle East", lat: 25.29, lon: 51.53, typical: "Short to medium-haul", to: "cok" },
+  { id: "sin", name: "Singapore", region: "Southeast Asia", lat: 1.35, lon: 103.82, typical: "Medium-haul", to: "hyd" },
+  { id: "dxb", name: "Dubai", region: "Middle East", lat: 25.2, lon: 55.27, typical: "Short to medium-haul", to: "hyd" },
+  { id: "bkk", name: "Bangkok", region: "Southeast Asia", lat: 13.75, lon: 100.5, typical: "Medium-haul", to: "hyd" },
+  { id: "kul", name: "Kuala Lumpur", region: "Southeast Asia", lat: 3.14, lon: 101.69, typical: "Medium-haul", to: "hyd" },
+  { id: "doh", name: "Doha", region: "Middle East", lat: 25.29, lon: 51.53, typical: "Short to medium-haul", to: "hyd" },
   { id: "ruh", name: "Riyadh", region: "Middle East", lat: 24.71, lon: 46.68, typical: "Medium-haul", to: "hyd" },
-  { id: "lhr", name: "London", region: "Europe", lat: 51.5, lon: -0.13, typical: "Long-haul", to: "del" },
-  { id: "fra", name: "Frankfurt", region: "Europe", lat: 50.11, lon: 8.68, typical: "Long-haul", to: "del" },
-  { id: "jfk", name: "New York", region: "USA", lat: 40.71, lon: -74.0, typical: "Ultra long-haul", to: "del" },
-  { id: "sfo", name: "San Francisco", region: "USA", lat: 37.77, lon: -122.42, typical: "Ultra long-haul", to: "blr" },
-  { id: "nbo", name: "Nairobi", region: "Africa", lat: -1.29, lon: 36.82, typical: "Long-haul", to: "bom" },
-  { id: "syd", name: "Sydney", region: "Australia", lat: -33.87, lon: 151.21, typical: "Ultra long-haul", to: "maa" },
+  { id: "lhr", name: "London", region: "Europe", lat: 51.5, lon: -0.13, typical: "Long-haul", to: "hyd" },
+  { id: "fra", name: "Frankfurt", region: "Europe", lat: 50.11, lon: 8.68, typical: "Long-haul", to: "hyd" },
+  { id: "jfk", name: "New York", region: "USA", lat: 40.71, lon: -74.0, typical: "Ultra long-haul", to: "hyd" },
+  { id: "sfo", name: "San Francisco", region: "USA", lat: 37.77, lon: -122.42, typical: "Ultra long-haul", to: "hyd" },
+  { id: "nbo", name: "Nairobi", region: "Africa", lat: -1.29, lon: 36.82, typical: "Long-haul", to: "hyd" },
+  { id: "syd", name: "Sydney", region: "Australia", lat: -33.87, lon: 151.21, typical: "Ultra long-haul", to: "hyd" },
 ];
 
 export const hubById = (id: string) => indianHubs.find((h) => h.id === id)!;

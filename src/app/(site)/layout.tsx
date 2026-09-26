@@ -1,7 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { EmergencyBar } from "@/components/layout/EmergencyBar";
-import { PreviewRibbon } from "@/components/layout/PreviewRibbon";
 import { AnalyticsListener } from "@/components/analytics/AnalyticsListener";
 import { JsonLd, organizationJsonLd } from "@/lib/seo";
 
@@ -14,7 +13,6 @@ export default function SiteLayout({ children }: LayoutProps<"/">) {
       >
         Skip to content
       </a>
-      <PreviewRibbon />
       <Header />
       <main id="main" className="flex-1">
         {children}

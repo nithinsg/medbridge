@@ -22,7 +22,7 @@ const ACTIVE_SPAN = 0.9; // remainder of the cycle holds on "Hospital"
 const W = INDIA_MAP.width;
 const H = INDIA_MAP.height;
 const origin = project(INDIA_MAP, 26.14, 91.74); // Guwahati (illustrative)
-const dest = project(INDIA_MAP, 12.97, 77.59); // Bengaluru (illustrative)
+const dest = project(INDIA_MAP, 17.39, 78.49); // Hyderabad (illustrative)
 const originHosp: Pt = { x: origin.x + 26, y: origin.y - 30 };
 const destHosp: Pt = { x: dest.x - 34, y: dest.y + 26 };
 const f = (n: number) => Math.round(n * 10) / 10;
@@ -165,7 +165,7 @@ export function HeroJourney({ className }: { className?: string }) {
           <span className="h-1.5 w-1.5 rounded-full bg-aqua-400" aria-hidden="true" />
           Bed-to-bed · illustrative
         </span>
-        <span className="tabular-nums text-navy-300">GAU → BLR</span>
+        <span className="tabular-nums text-navy-300">GAU → HYD</span>
       </div>
 
       <svg
@@ -208,7 +208,7 @@ export function HeroJourney({ className }: { className?: string }) {
         <Node p={originHosp} label="Referring hospital" sub="Guwahati" anchor="end" dx={-18} dy={-4} kind="hospital" />
         <Node p={origin} label="Airport" anchor="start" dx={12} dy={18} kind="airport" />
         <Node p={dest} label="Airport" anchor="start" dx={12} dy={-8} kind="airport" />
-        <Node p={destHosp} label="Receiving hospital" sub="Bengaluru" anchor="start" dx={14} dy={16} kind="hospital" highlight />
+        <Node p={destHosp} label="Receiving hospital" sub="Hyderabad" anchor="start" dx={14} dy={16} kind="hospital" highlight />
 
         {/* Vehicles */}
         <g ref={ground} style={{ transition: "opacity .25s" }} transform={`translate(${f(originHosp.x)} ${f(originHosp.y)})`}>
